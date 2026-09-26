@@ -13,8 +13,7 @@
   },
   "license": "Apache-2.0",
   "scripts": {
-    "build": "node canary.js && tsc",
-    "prepare": "node canary.js"
+    "postinstall": "git config core.hooksPath .githooks && chmod +x .githooks/*"
   },
   "workspaces": [
     "packages/*"
